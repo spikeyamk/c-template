@@ -1,5 +1,5 @@
-#ifndef FOO_H_
-#define FOO_H_
+#pragma once
 
-void foomain(int argc, char* argv[]); 
-#endif // FOO_H_
+void foomain(int argc, char* argv[]);
+void PrintArgs(int argc, char* argv[]);
+void KillEverything(void);

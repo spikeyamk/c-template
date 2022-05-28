@@ -9,5 +9,6 @@ foo.o: foo.c foo.h
 	gcc -Wall -g -c foo.c -o objects/foo.o 
 
 clean: 
-	rm bin/main
-	rm objects/*.o 
+	rm bin/main.exe
+	rm objects/main.o 
+	rm objects/foo.o 

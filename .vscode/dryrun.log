@@ -1,0 +1,8 @@
+make.exe --dry-run --keep-going --print-directory
+make: Entering directory 'd:/git-repos/c-template'
+gcc -Wall -g -c main.c -o objects/main.o 
+ 
+gcc -Wall -g -c foo.c -o objects/foo.o 
+gcc -Wall -g objects/main.o objects/foo.o -o bin/main 
+make: Leaving directory 'd:/git-repos/c-template'
+ 
