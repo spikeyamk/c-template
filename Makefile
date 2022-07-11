@@ -1,14 +1,12 @@
+CC=gcc
+LIBS=
 
-main.bin: main.o foo.o
-	gcc -Wall -g objects/main.o objects/foo.o -o bin/main 
+main: main.o
+	${CC} -Wall -Wextra -Wextra -g main.o -o main ${LIBS} 
 
 main.o: main.c
-	gcc -Wall -g -c main.c -o objects/main.o 
-
-foo.o: foo.c foo.h
-	gcc -Wall -g -c foo.c -o objects/foo.o 
+	gcc -Wall -g -c main.c -o main.o 
 
 clean: 
-	rm bin/main.exe
-	rm objects/main.o 
-	rm objects/foo.o 
+	rm main
+	rm main.o 

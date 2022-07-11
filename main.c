@@ -1,6 +1,6 @@
-#include "foo.h"
+#include <stdio.h>
 
-int main(int argc, char* argv[]){
-	foomain(argc, argv);
+int main(void){
+	printf("Hello World!\n");
 	return 0;
 } 
